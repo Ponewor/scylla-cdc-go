@@ -1,4 +1,4 @@
-module github.com/scylladb/scylla-cdc-go
+module github.com/Ponewor/scylla-cdc-go
 
 go 1.14
 

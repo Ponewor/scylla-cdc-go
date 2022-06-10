@@ -8,8 +8,8 @@ import (
 	"os"
 	"os/signal"
 
+	scyllacdc "github.com/Ponewor/scylla-cdc-go"
 	"github.com/gocql/gocql"
-	scyllacdc "github.com/scylladb/scylla-cdc-go"
 )
 
 func main() {

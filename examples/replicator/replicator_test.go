@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
+	scyllacdc "github.com/Ponewor/scylla-cdc-go"
 	"github.com/gocql/gocql"
-	scyllacdc "github.com/scylladb/scylla-cdc-go"
 )
 
 const (

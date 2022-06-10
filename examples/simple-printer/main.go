@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 
+	scyllacdc "github.com/Ponewor/scylla-cdc-go"
 	"github.com/gocql/gocql"
-	scyllacdc "github.com/scylladb/scylla-cdc-go"
 )
 
 // Make sure you create the following table before you run this example:

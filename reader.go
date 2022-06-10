@@ -212,6 +212,7 @@ func NewReader(ctx context.Context, config *ReaderConfig) (*Reader, error) {
 // Run runs the CDC reader. This call is blocking and returns after an error occurs, or the reader
 // is stopped gracefully.
 func (r *Reader) Run(ctx context.Context) error {
+	println("Reader Run() called")
 	l := r.config.Logger
 
 	runErrG, runCtx := errgroup.WithContext(ctx)
@@ -228,6 +229,7 @@ func (r *Reader) Run(ctx context.Context) error {
 	runErrG.Go(func() error {
 		return r.genFetcher.Run(runCtx)
 	})
+	println("Reached here")
 	runErrG.Go(func() error {
 		gen, err := r.genFetcher.Get(runCtx)
 		if gen == nil {

@@ -14,8 +14,8 @@ import (
 	"sync/atomic"
 	"time"
 
+	scyllacdc "github.com/Ponewor/scylla-cdc-go"
 	"github.com/gocql/gocql"
-	scyllacdc "github.com/scylladb/scylla-cdc-go"
 )
 
 // TODO: Escape field names?
